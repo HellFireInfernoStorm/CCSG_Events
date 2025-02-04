@@ -32,12 +32,12 @@ export default function ClubsDropdown() {
       </button>
 
       {isOpen && (
-        <div className="absolute top-full mt-2 w-48 bg-obsidian/95 backdrop-blur-md rounded-lg shadow-lg py-2 z-50 border border-cyberGold/20">
+        <div className="absolute top-full mt-2 w-48 bg-obsidian/80 backdrop-blur-md rounded-lg shadow-lg py-2 z-50 border border-cyberGold/20">
           {clubsList.map((club) => (
             <Link
               key={club.id}
               href={club.link}
-              className="block px-4 py-2 text-white hover:bg-steelBlue/20 hover:text-cyberGold/90 transition-colors"
+              className="block px-4 py-2 text-white hover:text-cyberGold/90 transition-colors"
             >
               {club.name}
             </Link>
