@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
+import ClubsDropdown from "./ClubsDropdown";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center p-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg">
-      {/* Placeholder Logo */}
+    <header className="flex justify-between items-center px-6 py-4 bg-gradient-to-r from-obsidian via-steelBlue/90 to-cyberGold/80 text-white shadow-lg border-b border-cyberGold/40">
       <div className="flex items-center">
         <Image
           src="/ccsg.png"
@@ -13,18 +14,24 @@ export default function Header() {
         />
       </div>
 
-      {/* Center Text */}
-      <h1 className="text-xl font-bold text-center">
-        Unplugged 2025 and Club Events
-      </h1>
+      <nav className="flex gap-10 items-center">
+        <Link 
+          href="/unplugged" 
+          className="text-xl font-bold hover:text-cyberGold/90 transition-colors"
+        >
+          Unplugged 2025
+        </Link>
+        
+        <ClubsDropdown />
+      </nav>
 
-      {/* Placeholder for Authentication */}
       <div className="flex items-center">
         <Image
           src="/ccsg.png"
           alt="Authentication Placeholder"
-          width={40}
-          height={40}
+          width={42}
+          height={42}
+          className="rounded-full border-2 border-cyberGold shadow-lg"
         />
       </div>
     </header>

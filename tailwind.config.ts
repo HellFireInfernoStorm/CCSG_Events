@@ -9,8 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        obsidian: "#121212",
+        gunmetal: "#2A2A2A",
+        midtone: "#4A4A3A",
+        cyberGold: "#FFD700",
+        neonBlue: "#00AEEF",
+        steelBlue: "#005F73",
+        emberOrange: "#FF8C00",
+      },
+      fontFamily: {
+        outfit: ["var(--font-outfit)"],
       },
     },
   },
