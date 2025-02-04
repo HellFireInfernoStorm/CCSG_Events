@@ -4,15 +4,15 @@ import ClubsDropdown from "./ClubsDropdown";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center px-6 py-4 bg-gradient-to-r from-obsidian via-steelBlue/90 to-cyberGold/80 text-white shadow-lg border-b border-cyberGold/40">
-      <div className="flex items-center">
+    <header className="flex justify-between items-center px-6 py-4 bg-gradient-to-r from-obsidian via-steelBlue/90 to-cyberGold/80 text-white shadow-lg">
+      <Link href="/" className="flex items-center">
         <Image
           src="/ccsg.png"
           alt="Placeholder Logo"
           width={50}
           height={50}
         />
-      </div>
+      </Link>
 
       <nav className="flex gap-10 items-center">
         <Link 

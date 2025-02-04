@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { clubsList } from "@/lib/mock-data-clubs";
+import { clubsList } from "@/lib/mock-data/clubs";
 import { ChevronDown } from "lucide-react";
 import { useState, useRef } from "react";
 
